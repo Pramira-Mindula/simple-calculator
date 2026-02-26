@@ -1,7 +1,11 @@
 while True:
 
-    num1 = float(input("Enter Number 1 : "))
-    num2 = float(input("Enter Number 2 : "))
+    try:
+        num1 = float(input("Enter Number 1 : "))
+        num2 = float(input("Enter Number 2 : "))
+    except:
+        print("Enter valid Numbers!\n")
+        continue
 
     op = input("Enter an Operation (+ , - , x . /) : ")
 
@@ -22,9 +26,9 @@ while True:
 
     else:
         print("Invalid Operator\n")
-
+        continue
 
     again = input("Don another? (y/n) :")
 
-    if again == "n" or again == "":
+    if again.lower() == "n" or again == "":
         break
