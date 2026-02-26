@@ -7,7 +7,7 @@ while True:
         print("Enter valid Numbers!\n")
         continue
 
-    op = input("Enter an Operation (+ , - , x . /) : ")
+    op = input("Enter an Operation (+ , - , x , / , ^) : ")
 
     if op == "+":
         print(f"Result = {num1 + num2}")
@@ -23,6 +23,9 @@ while True:
             print(f"Result = {num1 / num2}")
         else:
             print("Cannot Divide by Zero")
+
+    elif op == "^":
+        print(f"Resul = {num1 ** num2}")
 
     else:
         print("Invalid Operator\n")
