@@ -1,28 +1,41 @@
-﻿# 📘 Simple Calculator (Python)
+# 📘 Simple Calculator (Python)
 
-A **beginner-friendly Python project** that performs basic arithmetic operations:
+A **beginner-friendly Python project** that performs basic arithmetic operations using **Object-Oriented Programming (OOP)**.
 
-* ➕ Addition
-* ➖ Subtraction
-* ✖️ Multiplication
-* ➗ Division
+Now enhanced with:
 
-This is a **terminal-based calculator** designed to demonstrate:
-
-✔ Clean code structure<br>
-✔ Use of functions<br>
-✔ User input handling<br>
-✔ Basic error handling<br>
+✔ Calculation history<br>
+✔ Clear history option<br>
+✔ Square root operation<br>
+✔ Exit option<br>
+✔ Clean class-based design<br>
 
 ---
 
 ## 🚀 Features
 
-* Perform basic arithmetic operations
-* Handles division by zero safely
-* Easy to read and understand
-* Beginner-friendly project structure
-* Easily extendable (add power, modulus, etc.)
+* ➕ Addition
+* ➖ Subtraction
+* ✖️ Multiplication
+* ➗ Division (with zero handling)
+* 🔼 Power (Exponentiation)
+* √ Square Root
+* 🧾 View calculation history
+* 🗑 Clear history
+* ❌ Exit option
+* 🧠 Built using OOP principles
+* 🎯 Beginner-friendly & extendable
+
+---
+
+## 🧱 Built With OOP
+
+This calculator is structured using **classes and methods** to improve:
+
+* Code organization
+* Reusability
+* Scalability
+* Maintainability
 
 ---
 
@@ -31,7 +44,7 @@ This is a **terminal-based calculator** designed to demonstrate:
 ```
 simple-calculator/
 │
-├── calculator.py   # Main calculator script
+├── calculator.py   # Main calculator script (OOP based)
 └── README.md       # Project documentation
 ```
 
@@ -39,7 +52,7 @@ simple-calculator/
 
 ## 🛠 Requirements
 
-* Python **3.8+** (or any modern version)
+* Python **3.8+**
 
 Check your Python version:
 
@@ -71,16 +84,30 @@ python calculator.py
 
 ---
 
-## 🧪 Example Operations
-
-You can perform:
+## 🧪 Available Operations
 
 * Addition
 * Subtraction
 * Multiplication
 * Division
+* Square Root
 
-The program will also prevent crashes caused by division by zero.
+---
+
+## 🧾 History System
+
+The calculator now keeps track of your previous calculations.
+
+You can:
+
+* View history
+* Clear history anytime
+
+---
+
+## ❌ Exit Option
+
+Users can safely exit the program without interrupting execution.
 
 ---
 
@@ -88,11 +115,10 @@ The program will also prevent crashes caused by division by zero.
 
 You can extend this project by adding:
 
-* Power operations
-* Modulus
-* Square root
-* GUI version (Tkinter)
-* Continuous calculation mode
+* Percentage
+* Scientific functions
+* GUI version (Tkinter / PyQt)
+* File-based history saving
 
 ---
 
@@ -100,7 +126,7 @@ You can extend this project by adding:
 
 Contributions are welcome!
 
-If you'd like to improve this project:
+Steps:
 
 1. Fork the repository
 2. Create a new branch
