@@ -1,19 +1,30 @@
-num1 = float(input("Enter Number 1 : "))
-num2 = float(input("Enter Number 2 : "))
+while True:
 
-op = input("Enter an Operation (+ , - , x . /) : ")
+    num1 = float(input("Enter Number 1 : "))
+    num2 = float(input("Enter Number 2 : "))
 
-if op == "+":
-    print(num1 + num2)
+    op = input("Enter an Operation (+ , - , x . /) : ")
 
-elif op == "-":
-    print(num1 - num2)
+    if op == "+":
+        print(f"Result = {num1 + num2}")
 
-elif op == "x" or op == "X":
-    print(num1 * num2)
+    elif op == "-":
+        print(f"Result = {num1 - num2}")
 
-elif op == "/":
-    print(num1 / num2)
-    
-else:
-    print("Invalid Operator")
+    elif op == "x" or op == "X":
+        print(f"Result = {num1 * num2}")
+
+    elif op == "/":
+        if (num2 != 0):
+            print(f"Result = {num1 / num2}")
+        else:
+            print("Cannot Divide by Zero")
+
+    else:
+        print("Invalid Operator\n")
+
+
+    again = input("Don another? (y/n) :")
+
+    if again == "n" or again == "":
+        break
