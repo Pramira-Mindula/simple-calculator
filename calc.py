@@ -11,7 +11,7 @@ while True:
     elif op == "-":
         print(f"Result = {num1 - num2}")
 
-    elif op == "x" or op == "X":
+    elif op.lower() == "x":
         print(f"Result = {num1 * num2}")
 
     elif op == "/":
