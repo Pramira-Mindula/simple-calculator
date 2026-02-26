@@ -55,11 +55,33 @@ class Calculator:
 
         while True:
 
-            op = input("Enter an Operation (+ , - , x , / , ^ , history , clear , exit) : ")
+            op = input("Enter an Operation (+ , - , x , / , ^ , sqrt , history , clear , exit) : ")
 
             if op.lower() == "exit":
                 print()
                 break
+
+            elif op.lower() == "sqrt":
+                try:
+                    num1 = float(input("Enter Number : "))
+                except:
+                    print("Enter valid number!\n")
+                    continue
+
+                if num1 >= 0:
+                    result = math.sqrt(num1)
+                    self.history.append(f"sqrt({num1}) = {result}")
+                    print(f"Result = {result}")
+                else:
+                    print("Cannot take sqrt of negative number")
+
+                again = input("Do another? (y/n) : ")
+                print()
+
+                if again.lower() == "n" or again == "":
+                    break
+
+                continue
 
             elif op.lower() == "history":
                 self.show_history()
